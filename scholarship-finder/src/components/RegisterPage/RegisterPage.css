@@ -1,0 +1,77 @@
+.register-container {
+  background: rgba(0, 20, 40, 0.85);
+  padding: 3em;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.05);
+  width: 450px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  transition: transform 0.5s ease;
+}
+
+.register-container:hover {
+  transform: translateZ(15px);
+}
+
+#register-form {
+  text-align: left;
+}
+
+.register-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #00d0ff, #009aff);
+  color: #001d3d;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.register-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00f0ff, 0 0 10px #00f6ff inset;
+  background: linear-gradient(135deg, #00f0ff, #00aaff);
+}
+
+.register-footer {
+  color: #e0faff;
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+.register-footer a {
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.register-footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00e6ff;
+  transition: width 0.3s ease;
+}
+
+.register-footer a:hover::after {
+  width: 100%;
+}

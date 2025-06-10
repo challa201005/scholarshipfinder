@@ -1,0 +1,209 @@
+/* src/pages/ScholarshipDetailPage.css */
+.scholarship-detail-container {
+  width: 85vw;
+  margin: 2rem auto;
+  background: rgba(0, 15, 30, 0.9);
+  height: 90vh;
+  overflow-y: scroll;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(0, 255, 255, 0.05);
+  padding: 30px;
+  margin-top: 90px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: #e0faff;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #00f0ff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  text-shadow: 0 0 3px #00f0ff;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.scholarship-header {
+  margin-bottom: 2rem;
+}
+
+.scholarship-header h1 {
+  color: #00f0ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.scholarship-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.amount-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+  text-shadow: none;
+}
+
+.amount-badge.full {
+  background-color: #00ff9d;
+}
+
+.amount-badge.partial {
+  background-color: #ffee00;
+  color: #000;
+}
+
+.amount-badge.small {
+  background-color: #00b7ff;
+  color: #000;
+}
+
+.deadline {
+  color: #aad2ff;
+}
+
+.scholarship-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-content {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  color: #00e6ff;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p,
+.section ul {
+  line-height: 1.6;
+  color: #e0faff;
+}
+
+.section ul {
+  padding-left: 1.5rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-section {
+  background: rgba(0, 30, 50, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  color: #e0faff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.sidebar-section ul {
+  list-style-type: none;
+  color: #e0faff;
+}
+
+.sidebar-section h3 {
+  margin-top: 0;
+  color: #00f0ff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 4px rgba(0, 255, 255, 0.4);
+}
+
+.sidebar-section p {
+  margin: 0.5rem 0;
+}
+
+.sidebar-section a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.sidebar-section a:hover {
+  text-decoration: underline;
+}
+
+.apply-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00ffaa;
+  color: #001f2f;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem auto 0.5rem auto;
+  border: 2px solid transparent;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.4);
+}
+
+.apply-button:hover:not(:disabled) {
+  border: 2px solid #00d98b;
+  text-shadow: 0 0 4px #00ffaa;
+  background-color: #00e6a0;
+}
+
+.apply-button:disabled {
+  background-color: #555;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.expired-notice {
+  color: #ff4c4c;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 0.9rem;
+  text-shadow: 0 0 3px #ff4c4c;
+}
+
+.loading,
+.error,
+.not-found {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #ff4c4c;
+}
+
+.not-found {
+  color: #99bbcc;
+}
+
+@media (max-width: 768px) {
+  .scholarship-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+}

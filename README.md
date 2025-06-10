@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Run Locally.
 ### First clone the repo
 ```bash
@@ -18,3 +19,6 @@ cd scholarship-finder
 npm i
 npm run dev
 ````
+=======
+# scholarshipfinder
+>>>>>>> 401fdb9f9c69ecedd192f12298c65393d719e54b
